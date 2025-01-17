@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nova+Mono&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nova+Mono&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
     --secondary: #00bcd4;
@@ -16,13 +16,16 @@
 body {
     background-color: black;
 }
+
 a {
     text-decoration: none !important;
     color: white !important;
 }
-.brackets{
+
+.brackets {
     color: var(--altText) !important;
 }
+
 .nav {
     border-bottom: 1px solid;
 }
@@ -48,9 +51,11 @@ a {
     background-color: var(--navhover);
     transition: 0.2s ease-in;
 }
-.hero{
+
+.hero {
     padding: 20px 10px !important;
 }
+
 .intro h3 {
     font-weight: 600;
     color: var(--secondary);
@@ -93,6 +98,67 @@ a {
     transition: 0.2s ease-in;
 }
 
+.about_sec p {
+    color: var(--altText);
+}
+
+.about_sec span {
+    color: var(--secondary);
+}
+
+.about_sec h3 {
+    font-family: "Ubuntu", serif;
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projects_text h4{
+    font-family: "Ubuntu", serif;
+}
+.projects_text p{
+    color: var(--altText);
+    font-size: 20px;
+}
+.project_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.project_card{
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--grey);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 6px 24px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+}
+.js{
+    background-color: #302E1D;
+    color: #FAF085;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+.bs{
+    background-color: var(--navhover);
+    color: #7431FA;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+.seperation{
+    background-color: var(--altText);
+    opacity: 0.3;
+    height: 1px;
+}
+.project_disc{
+    color: var(--altText);
+}
 @media (max-width: 767px) {
     .intro h1 {
         font-size: 65px;
@@ -105,9 +171,15 @@ a {
     .intro_text p {
         font-size: 22px;
     }
-    .intro_tech p{
+
+    .intro_tech p {
         font-size: 15px;
     }
+    .img {
+        width: 300px;
+        height: 300px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -122,7 +194,8 @@ a {
     .intro_text p {
         font-size: 24px;
     }
-    .intro_tech p{
+
+    .intro_tech p {
         font-size: 16px;
     }
 }
