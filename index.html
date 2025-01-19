@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown bg-black">
+    <nav class="navbar navbar-expand-lg bg-black" data-aos="fade-down" data-aos-duration="800">
         <div class="container nav">
             <a class="navbar-brand fs-2 fw-bold px-2" href=""><span class="brackets">{</span>
                 <span class="text-light">S</span>
@@ -61,8 +62,8 @@
             </ul>
         </div>
     </div>
-    <div class="container text-light animate__animated animate__fadeIn">
-        <div class="row" id="Home">
+    <div class="container text-light">
+        <div class="row animate__animated animate__fadeIn" id="Home" >
             <div class="hero col-lg-9 col-md-9 col-sm-12 ms-2 d-flex flex-column gap-5">
                 <div class="intro">
                     <h3>Hello World! I'm-</h3>
@@ -91,7 +92,7 @@
     </div>
     <div class="container text-light animate__animated animate__fadeIn">
         <div class="row mt-5 py-5" id="about">
-            <div class="col-lg-7 col-md-7 col-sm-12 about_sec">
+            <div data-aos="fade-right" data-aos-duration="2000" class="col-lg-7 col-md-7 col-sm-12 about_sec">
                 <h3>⚡ About Me</h3>
                 <p class="mt-3">
                     Hey! I'm <span>Salman Ansar</span>, fascinated by computers from an early age, which sparked my
@@ -113,7 +114,7 @@
                     my skills.
                 </p>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 img_sec d-flex justify-content-center align-items-center">
+            <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-5 col-md-5 col-sm-12 img_sec d-flex justify-content-center align-items-center">
                 <div class="img">
                     <img src="assets/img.jpg" alt="">
                 </div>
@@ -127,7 +128,7 @@
         </div>
         <div class="row row-gap-5 pt-2 pb-3">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="project_one project_card">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="project_one project_card">
                     <div class="project_img">
                         <img src="assets/weather project.PNG" alt="">
                     </div>
@@ -148,7 +149,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="project_two project_card">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="project_two project_card">
                     <div class="project_img">
                         <img src="assets/quiz app.PNG" alt="">
                     </div>
@@ -169,7 +170,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="project_three project_card">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="project_three project_card">
                     <div class="project_img">
                         <img src="assets/food wagon.PNG" alt="">
                     </div>
@@ -190,7 +191,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="project_four project_card">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="project_four project_card">
                     <div class="project_img">
                         <img src="assets/password project.PNG" alt="">
                     </div>
@@ -211,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5" id="contact">
+        <div data-aos="fade-up" data-aos-duration="3000" class="row mt-5" id="contact">
             <div class="contact_info d-flex justify-content-center align-items-center flex-column gap-4 pt-5">
                 <h1 class="fw-bold fs-1">Let's Connect.</h1>
                 <p class="text-center">Currently specializing in <span>Full-Stack Development.</span>
@@ -231,8 +232,8 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-5 pb-3">
-            <div class="footer">
+        <div class="row pt-5 pb-3" data-aos="fade-down" data-aos-duration="3000">
+            <div class="footer" >
                 <p class="text-center m-0">Designed and Developed by <span>Muhammad Salman Ansar</span> <br>
                     Built with <span>Vanilla js</span> & <span>Bootstrap</span>. Hosted on <span>Netlify</span>.</p>
                 <p id="footerMessage" class="text-center"></p>
@@ -249,6 +250,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3a83dfd1d2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="app.js"></script>
 </body>
 
