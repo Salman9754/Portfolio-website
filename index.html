@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salman</title>
-    <link rel="shortcut icon" href="assets/shortcut icon.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/shortcut icon-photoaidcom-cropped.PNG" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,9 +14,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown bg-black">
         <div class="container nav">
-            <a class="navbar-brand fs-2 fw-bold px-2"><span class="brackets">{</span>
+            <a class="navbar-brand fs-2 fw-bold px-2" href=""><span class="brackets">{</span>
                 <span class="text-light">S</span>
                 <span class="brackets">}</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -25,8 +25,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end gap-2" id="">
                 <div class="items d-flex gap-4">
-                    <a href="" class="text-light fw-bold"><span>Home</span></a>
-                    <a href="" class="text-light fw-bold"><span>Projects</span></a>
+                    <a href="#Home" class="text-light fw-bold"><span>Home</span></a>
+                    <a href="#about" class="text-light fw-bold"><span>About</span></a>
+                    <a href="#projects" class="text-light fw-bold"><span>Projects</span></a>
+                    <a href="#contact" class="text-light fw-bold"><span>Contact</span></a>
+
                 </div>
             </div>
         </div>
@@ -43,40 +46,51 @@
         </div>
         <div class="offcanvas-body text-light items">
             <ul class="p-0">
-                <a href="">
+                <a href="#Home">
                     <li><span>Home</span></li>
                 </a>
-                <a href="">
+                <a href="#about">
+                    <li><span>About</span></li>
+                </a>
+                <a href="#projects">
                     <li><span>Projects</span></li>
+                </a>
+                <a href="#contact">
+                    <li><span>Contact</span></li>
                 </a>
             </ul>
         </div>
     </div>
-    <div class="container text-light mt-2 animate__animated animate__fadeIn">
-        <div class="row">
+    <div class="container text-light animate__animated animate__fadeIn">
+        <div class="row" id="Home">
             <div class="hero col-lg-9 col-md-9 col-sm-12 ms-2 d-flex flex-column gap-5">
                 <div class="intro">
                     <h3>Hello World! I'm-</h3>
                     <h1 class="fw-bold">Salman Ansar</h1>
                 </div>
                 <div class="intro_text">
-                    <p class="m-0">Software Engineer.<span>A tech enthusiast pushing the boundaries of development every
-                            day.</span></p>
+                    <p class="m-0">Software Engineer.<span>A tech enthusiast pushing the boundaries of development every day.</span></p>
                 </div>
                 <div class="intro_tech">
                     <p class="m-0">🚀 Excelling in full-stack development.</p>
                     <p class="m-0">⚡ MERN stack enthusiast</p>
                 </div>
                 <div class="intro_social d-flex gap-3">
-                    <button><img src="assets/github-142-svgrepo-com.svg" alt="" width="16px"
-                            height="16px">Github</button>
+                   <a href="https://github.com/Salman9754"> <button><img src="assets/github-142-svgrepo-com.svg" alt="" width="16px"
+                    height="16px">Github</button></a>
+                   <a href="https://www.linkedin.com/in/muhammad-salman-ansar-4362a32aa/">
                     <button><img src="assets/linkedin-svgrepo-com.svg" alt="" width="20px"
-                            height="20px">LinkedIn</button>
+                        height="20px">LinkedIn</button>
+                   </a>
+                  <a href="mailto:salmanwattoo79@gmail.com">
                     <button><img src="assets/email-svgrepo-com.svg" alt="" width="14px" height="14px">Email</button>
+                  </a>
                 </div>
             </div>
         </div>
-        <div class="row mt-5 py-5">
+    </div>
+    <div class="container text-light animate__animated animate__fadeIn">
+        <div class="row mt-5 py-5" id="about">
             <div class="col-lg-7 col-md-7 col-sm-12 about_sec">
                 <h3>⚡ About Me</h3>
                 <p class="mt-3">
@@ -105,13 +119,13 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5 pt-4">
+        <div class="row mt-4 pt-4" id="projects">
             <div class="projects_text">
                 <h4 class="fw-bold">✨ My Creative Works.</h4>
                 <p>Here's some of my projects that I have worked on.</p>
             </div>
         </div>
-        <div class="row row-gap-5 mt-2">
+        <div class="row row-gap-5 pt-2 pb-3">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="project_one project_card">
                     <div class="project_img">
@@ -120,7 +134,8 @@
                     <div class="project_info px-3 mt-3">
                         <div class="title d-flex justify-content-between align-items-center">
                             <h4 class="m-0">Modern Weather App</h4>
-                            <a href="https://modern-weathers-app.netlify.app/"><span><i class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
+                            <a href="https://modern-weathers-app.netlify.app/"><span><i
+                                        class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
                         </div>
                         <div class="badges d-flex gap-2 mt-2">
                             <div class="badge_one js"><i class="fa-brands fa-js"></i> Javascript</div>
@@ -139,15 +154,17 @@
                     </div>
                     <div class="project_info px-3 mt-3">
                         <div class="title d-flex justify-content-between align-items-center">
-                            <h4 class="m-0">Quiz Web App</h4> 
-                           <a href="https://quiz-webs-app.netlify.app/"> <span><i class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
+                            <h4 class="m-0">Quiz Web App</h4>
+                            <a href="https://quiz-webs-app.netlify.app/"> <span><i
+                                        class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
                         </div>
                         <div class="badges d-flex gap-2 mt-2">
                             <div class="badge_one js"><i class="fa-brands fa-js"></i> Javascript</div>
                             <div class="badge_two saas"><i class="fa-brands fa-sass"></i> Saas</div>
                         </div>
                         <div class="seperation my-2"></div>
-                        <p class="project_disc">A captivating platform for taking quizzes and instantly viewing comprehensive results with a smooth user experience.</p>
+                        <p class="project_disc">A captivating platform for taking quizzes and instantly viewing
+                            comprehensive results with a smooth user experience.</p>
                     </div>
                 </div>
             </div>
@@ -159,14 +176,16 @@
                     <div class="project_info px-3 mt-3">
                         <div class="title d-flex justify-content-between align-items-center">
                             <h4 class="m-0">Food Landing Page</h4>
-                           <a href="https://foods-wagon.netlify.app/"><span><i class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
+                            <a href="https://foods-wagon.netlify.app/"><span><i
+                                        class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
                         </div>
                         <div class="badges d-flex gap-2 mt-2">
                             <div class="badge_one css"><i class="fa-brands fa-css3-alt"></i> Css</div>
                             <div class="badge_two saas"><i class="fa-brands fa-sass"></i> Saas</div>
                         </div>
                         <div class="seperation my-2"></div>
-                        <p class="project_disc">A visually captivating landing page showcasing delicious cuisines and restaurant offerings, designed for easy menu exploration and seamless ordering.</p>
+                        <p class="project_disc">A visually captivating landing page showcasing delicious cuisines and
+                            restaurant offerings, designed for easy menu exploration and seamless ordering.</p>
                     </div>
                 </div>
             </div>
@@ -178,16 +197,45 @@
                     <div class="project_info px-3 mt-3">
                         <div class="title d-flex justify-content-between align-items-center">
                             <h4 class="m-0">Password Generator</h4>
-                            <a href="https://random-password-geneartors.netlify.app/"><span><i class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
+                            <a href="https://random-password-geneartors.netlify.app/"><span><i
+                                        class="fa-solid fa-up-right-from-square fs-5"></i></span></a>
                         </div>
                         <div class="badges d-flex gap-2 mt-2">
                             <div class="badge_one js"><i class="fa-brands fa-js"></i> Javascript</div>
                             <div class="badge_two bs"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
                         </div>
                         <div class="seperation my-2"></div>
-                        <p class="project_disc">A secure Random Password Generator that creates strong, unique passwords to enhance your online security. Easily customizable for personalized protection.</p>
+                        <p class="project_disc">A secure Random Password Generator to create strong, unique passwords
+                            for enhanced online protection. Easily customizable to suit your needs.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row mt-5" id="contact">
+            <div class="contact_info d-flex justify-content-center align-items-center flex-column gap-4 pt-5">
+                <h1 class="fw-bold fs-1">Let's Connect.</h1>
+                <p class="text-center">Currently specializing in <span>Full-Stack Development.</span>
+                    <br> I craft seamless solutions.
+                    Let's connect and bring your projects to life!
+                </p>
+                <div class="intro_social d-flex gap-3">
+                    <a href="https://github.com/Salman9754"> <button><img src="assets/github-142-svgrepo-com.svg" alt="" width="16px"
+                        height="16px">Github</button></a>
+                       <a href="https://www.linkedin.com/in/muhammad-salman-ansar-4362a32aa/">
+                        <button><img src="assets/linkedin-svgrepo-com.svg" alt="" width="20px"
+                            height="20px">LinkedIn</button>
+                       </a>
+                      <a href="mailto:salmanwattoo79@gmail.com">
+                        <button><img src="assets/email-svgrepo-com.svg" alt="" width="14px" height="14px">Email</button>
+                      </a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 pb-3">
+            <div class="footer">
+                <p class="text-center m-0">Designed and Developed by <span>Muhammad Salman Ansar</span> <br>
+                    Built with <span>Vanilla js</span> & <span>Bootstrap</span>. Hosted on <span>Netlify</span>.</p>
+                <p id="footerMessage" class="text-center"></p>
             </div>
         </div>
     </div>
@@ -201,6 +249,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3a83dfd1d2.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
